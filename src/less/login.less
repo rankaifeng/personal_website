@@ -1,0 +1,103 @@
+html body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login_bg {
+  background-color: red;
+  width: 100%;
+  background: url('../img/bg.jpg');
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  height: 100%;
+
+  .login_content {
+    width: 500px;
+    height: 510px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    background-color: #fff;
+    padding: 60px;
+    /* IE6和部分IE7内核的浏览器(如QQ浏览器)下颜色被覆盖 */
+    background-color: rgba(170, 170, 168, 0.705);
+    /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+    border-radius: 8px;
+
+    .login_welcome {
+      font-size: 20px;
+      font-family: serif;
+    }
+
+    .login_title {
+      margin-top: 10px;
+      font-size: 25px;
+      font-family: serif;
+    }
+
+    .ant-input-affix-wrapper {
+      margin-top: 30px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+
+      .ant-input-prefix {
+        color: rgb(146, 142, 142);
+      }
+
+      input {
+        // background-color: rgba(224, 224, 221, 0.705);
+        font-size: 20px;
+        font-family: auto;
+        text-indent: 15px;
+      }
+
+
+      input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: rgb(173, 166, 166);
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+    }
+
+    .btn_login {
+      height: 40px;
+      margin-top: 15px;
+      cursor: pointer;
+      line-height: 40px;
+      border-radius: 5px;
+      text-align: center;
+      background-color: #0ac085;
+    }
+
+    .register:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .register {
+      margin-top: 15px;
+      cursor: pointer;
+      float: right;
+    }
+
+    .buttom {
+      height: 35px;
+      width: 60%;
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
+      color: #CDDC39;
+      border-radius: 5px;
+      // background-color: rgba(224, 224, 221, 0.705);
+      line-height: 35px;
+    }
+  }
+}
