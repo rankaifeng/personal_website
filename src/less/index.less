@@ -1,22 +1,48 @@
-.main-layout {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-color: rgb(241, 238, 238);
+@backColor: #fff;
 
+.comm_bg(@bg: @backColor) {
+  background-color: @backColor;
+  padding: .3rem;
+  border-bottom: 1px solid #eee;
+}
 
-  .main-layout-content {
-    width: 80%;
-    margin: 0 auto;
-    color: gray;
-    background-color: white;
+body {
+  background-color: @backColor;
+}
+
+.comm-left {
+  border-radius: .3rem;
+  .comm_bg();
+}
+
+.comm-right {
+  margin-left: .5rem;
+  // border-radius: .3rem;
+  // .comm_bg();
+}
+
+.comm-main {
+  margin-top: .5rem;
+}
+
+.detailed-nav {
+  margin-top: 10px;
+  background-color: #fff;
+
+  .nav-title {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(226, 222, 222);
   }
 
-  .main-layout-footer {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+  .article-menu {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .title-anchor {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(226, 222, 222);
   }
 }
