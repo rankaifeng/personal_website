@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd';
 import { HeaderTitle } from '@component/HeaderTitle';
+import Home  from '@page/Home';
 import { Route } from 'react-router-dom'
 
 import Detail from '../page/Detail';
@@ -10,6 +11,7 @@ const BasicLayout = ({ route, children }) => {
       <HeaderTitle routes={route.childRoutes} />
       <Layout.Content className="main-layout-content">
         <Route exact path="/detail" component={Detail} />
+          <Route exact path="/" component={Home} />
         {children}
       </Layout.Content>
       {/* <Layout.Footer className="main-layout-footer">
